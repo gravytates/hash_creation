@@ -27,4 +27,12 @@ describe(MyHash) do
     end
   end
 
+  describe("#Store") do
+    it("Stores a key value pair within the hash") do
+      test_hash = MyHash.new()
+      test_hash.Store("kitten", "cute")
+      expect(test_hash.Show()).to(eq([["kitten", "cute"]]))
+    end
+  end
+
 end

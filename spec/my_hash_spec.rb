@@ -35,4 +35,12 @@ describe(MyHash) do
     end
   end
 
+  describe("#Length") do
+    it("Returns the length of the hash") do
+      test_hash = MyHash.new()
+      test_hash.Store("kitten", "cute")
+      expect(test_hash.Length()).to(eq(1))
+    end
+  end
+
 end

@@ -19,4 +19,12 @@ describe(MyHash) do
     end
   end
 
+  describe("#HasValue") do
+    it("Checks if a given value exists within the hash") do
+      test_hash = MyHash.new()
+      test_hash.Store("kitten", "cute")
+      expect(test_hash.HasValue("cute")).to(eq(true))
+    end
+  end
+
 end

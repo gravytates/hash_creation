@@ -58,6 +58,7 @@ class MyHash
     hash.Show.each do |pair|
       @pairs.push(pair)
     end
+    @pairs
   end
 
 end

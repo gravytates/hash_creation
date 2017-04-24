@@ -43,4 +43,14 @@ describe(MyHash) do
     end
   end
 
+  describe("#Merge") do
+    it("Merges two hashes") do
+      test_hash = MyHash.new()
+      other_hash = MyHash.new()
+      test_hash.Store("kitten", "cute")
+      other_hash.Store("other_kitten", "other_cute")
+      expect(test_hash.Merge(other_hash)).to(eq([["kitten", "cute"], ["other_kitten", "other_cute"]]))
+    end
+  end
+
 end
